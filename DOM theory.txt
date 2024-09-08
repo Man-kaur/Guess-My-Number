@@ -1,0 +1,28 @@
+1.firstly query selector will select the element with class or id you provide as argument
+2.Secondly, if you dont give text content console will print the whole element rather than the content present in that element
+3.When multiple methods are given using dot operator, execution is from left to right
+4.to select css property use document.querySelector('.class').style.property = 'valueWithUnits';
+
+
+-->DOM Manipulation:  Javascript will interact with the browser(Docuement Object Model)
+                    Structured representation of html docs, allows js to access html elements and styles to manipulate them
+                    do see the DOM tree structure: Document is the entry nd html is root element in this tree
+                    DOM is not part of js, it is part of web API, it helps js to interact with browser
+-->API : Application Programming Interface --> it is responsible for fetching data from internet and providing it to browser or app to display
+        Eg: Web application --> user ask for weather of NY , API will fetch the data from the provider which could be weather channel and then 
+        provides this data to apps
+
+--> EventListener: a method in DOM called to provide an event(clicks) with some functionlity(event handlers)
+                    eg: document.querySelector('.guess').addEventListener('event',function(){});
+--> eventHandler: method which is called whenever event mentioned in addEventListener takes place(handled by js engine)
+
+--> Never violate the DRY principle: Refactor your code(identify the duplicate code and eliminate it)
+    Used in guess my number game via making display message fxn instead of doing same thing again and again
+
+
+
+
+
+ABOUT GAME:
+1. for generating random number, Math.random()*num is used. (num defines the range);
+2. this random function will give decimals, so Math.trunc is used.  --> final code is: Math.trunc(Math.random)*num +1;

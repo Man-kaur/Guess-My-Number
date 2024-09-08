@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Position Properties Example</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: #f8f9fa;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .static-example {
+        position: static;
+        border: 1px solid black;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .relative-example {
+        position: relative;
+        top: 20px;
+        left: 30px;
+        border: 1px solid black;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .absolute-example {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid black;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .fixed-example {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        border: 1px solid black;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .sticky-example {
+        position: sticky;
+        top: 0;
+        background-color: yellow;
+        border: 1px solid black;
+        padding: 10px;
+        margin-bottom: 2000px; /* Ensure enough content for scrolling */
+    }
+
+    .content {
+        height: 2000px; /* Height to make the page scrollable */
+    }
+</style>
+</head>
+<body>
+<header>Position Properties Example</header>
+
+<div class="content">
+    <div class="static-example">Static Position</div>
+    <div class="relative-example">Relative Position</div>
+    <div class="absolute-example">Absolute Position</div>
+    <div class="fixed-example">Fixed Position</div>
+    <div class="sticky-example">Sticky Position (scroll down to see effect)</div>
+</div>
+
+</body>
+</html>
